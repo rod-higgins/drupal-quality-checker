@@ -4,8 +4,8 @@
   projects. See https://git.drupalcode.org/project/examples/blob/HEAD/phpcs.xml.dist
   for source.
 -->
-<ruleset name="AxelerantDrupal">
-  <description>Axelerant baseline rules for PHP CodeSniffer</description>
+<ruleset name="RodHIgginsDrupal">
+  <description>Drupal 10 baseline rules for PHP CodeSniffer</description>
   <file>.</file>
 
   <!-- PHPCS Arguments -->

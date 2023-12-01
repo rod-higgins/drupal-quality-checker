@@ -3,7 +3,7 @@
     "type": "project",
     "description": "Code quality checking tools for Drupal project.",
     "homepage": "https://github.com/rod-higgins/drupal-quality-checker",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rod Higgins",
@@ -12,13 +12,13 @@
     ],
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "drupal/coder": "^8.3.7",
+        "drupal/coder": "^8.3.22",
         "friendsoftwig/twigcs": "^4.0 || ^5.0 || ^6.0",
         "php-parallel-lint/php-parallel-lint": "^1.2",
         "phpcompatibility/php-compatibility": "^9.0",
         "phpmd/phpmd": "^2.8",
         "phpro/grumphp-shim": "^1.0.0",
-        "sebastian/phpcpd": "^3.0 || ^4.0 || ^5.0 || ^6.0"
+        "sebastian/phpcpd": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
     },
     "require-dev": {
     },
@@ -27,11 +27,7 @@
         "source": "https://github.com/rod-higgins/drupal-quality-checker"
     },
     "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "phpro/grumphp-shim": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
+        "sort-packages": true
     },
     "extra": {
         "drupal-scaffold": {
@@ -50,6 +46,6 @@
         }
     },
     "suggest": {
-        "drupal/core-composer-scaffold": "Scaffold relevant files in project root. Add axelerant/drupal-quality-checker to extra.drupal-scaffold.allowed-packages."
+        "drupal/core-composer-scaffold": "Scaffold relevant files in project root. Add rod-higgins/drupal-quality-checker to extra.drupal-scaffold.allowed-packages."
     }
 }
