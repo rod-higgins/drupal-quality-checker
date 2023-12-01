@@ -10,6 +10,12 @@
             "role": "Maintainer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rod-higgins/phpcpd"
+        }
+    ],   
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "*",
         "drupal/coder": "^8.3.22",
@@ -18,7 +24,7 @@
         "phpcompatibility/php-compatibility": "^9.0",
         "phpmd/phpmd": "^2.8",
         "phpro/grumphp-shim": "^1.0.0",
-        "sebastian/phpcpd": "^6.0.3"
+        "rod-higgins/phpcpd": "^1.0.0"
     },
     "support": {
         "issues": "https://github.com/rod-higgins/drupal-quality-checker/issues",
