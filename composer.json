@@ -18,16 +18,18 @@
         "phpcompatibility/php-compatibility": "^9.0",
         "phpmd/phpmd": "^2.8",
         "phpro/grumphp-shim": "^1.0.0",
-        "sebastian/phpcpd": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
-    },
-    "require-dev": {
+        "sebastian/phpcpd": "^6.0"
     },
     "support": {
         "issues": "https://github.com/rod-higgins/drupal-quality-checker/issues",
         "source": "https://github.com/rod-higgins/drupal-quality-checker"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp-shim": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
