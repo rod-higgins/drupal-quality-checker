@@ -1,0 +1,55 @@
+{
+    "name": "rod-higgins/drupal-quality-checker",
+    "type": "project",
+    "description": "Code quality checking tools for Drupal project.",
+    "homepage": "https://github.com/rod-higgins/drupal-quality-checker",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Rod Higgins",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "drupal/coder": "^8.3.7",
+        "friendsoftwig/twigcs": "^4.0 || ^5.0 || ^6.0",
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "phpcompatibility/php-compatibility": "^9.0",
+        "phpmd/phpmd": "^2.8",
+        "phpro/grumphp-shim": "^1.0.0",
+        "sebastian/phpcpd": "^3.0 || ^4.0 || ^5.0 || ^6.0"
+    },
+    "require-dev": {
+    },
+    "support": {
+        "issues": "https://github.com/rod-higgins/drupal-quality-checker/issues",
+        "source": "https://github.com/rod-higgins/drupal-quality-checker"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpro/grumphp-shim": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[project-root]/grumphp.yml.dist": {
+                    "mode": "replace",
+                    "path": "grumphp.yml.dist",
+                    "overwrite": false
+                },
+                "[project-root]/phpcs.xml.dist": "phpcs.xml.dist",
+                "[project-root]/phpmd.xml.dist": "phpmd.xml.dist"
+            }
+        },
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "suggest": {
+        "drupal/core-composer-scaffold": "Scaffold relevant files in project root. Add axelerant/drupal-quality-checker to extra.drupal-scaffold.allowed-packages."
+    }
+}
